@@ -2,6 +2,7 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_series/screens/email_auth/login_screen.dart';
+import 'package:firebase_series/screens/phone_auth/sign_in_with_phone.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void logOut() async {
     await FirebaseAuth.instance.signOut();
     Navigator.pushReplacement(
-        context, CupertinoPageRoute(builder: (context) => LoginScreen()));
+        context, CupertinoPageRoute(builder: (context) => SignInWithPhone()));
   }
 
   @override

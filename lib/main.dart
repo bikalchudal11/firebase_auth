@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_series/home.dart';
 import 'package:firebase_series/screens/email_auth/login_screen.dart';
+import 'package:firebase_series/screens/phone_auth/sign_in_with_phone.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       //if the user is logged in then we show home page
       home: (FirebaseAuth.instance.currentUser != null)
           ? HomeScreen()
-          : LoginScreen(),
+          : SignInWithPhone(),
     );
   }
 }
