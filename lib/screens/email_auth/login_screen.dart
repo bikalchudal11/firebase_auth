@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
             .signInWithEmailAndPassword(email: email, password: password);
 
         if (userCredential.user != null) {
-          Navigator.push(
+          Navigator.pushReplacement(
               context, CupertinoPageRoute(builder: (context) => HomeScreen()));
         }
       } on FirebaseAuthException catch (ex) {

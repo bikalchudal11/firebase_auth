@@ -1,8 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_series/home.dart';
 import 'package:firebase_series/screens/email_auth/login_screen.dart';
-import 'package:firebase_series/screens/email_auth/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 
@@ -21,7 +22,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      //if the user is logged in then we show home page
+      home: (FirebaseAuth.instance.currentUser != null)
+          ? HomeScreen()
+          : LoginScreen(),
     );
   }
 }
