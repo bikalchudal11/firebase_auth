@@ -47,28 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBvUn92KjIyTtqSL7UOn6X5-3o6oVCzixc',
-    appId: '1:1052037114353:web:b58585382d660c596abc50',
-    messagingSenderId: '1052037114353',
-    projectId: 'fir-series-251f8',
-    authDomain: 'fir-series-251f8.firebaseapp.com',
-    storageBucket: 'fir-series-251f8.appspot.com',
+    apiKey: 'AIzaSyCQw3i286-YQmidYYQJaF5vRjBEbG3I96A',
+    appId: '1:752850897548:web:11a14f1705481face8c9a9',
+    messagingSenderId: '752850897548',
+    projectId: 'attendance-management-sy-5bf5c',
+    authDomain: 'attendance-management-sy-5bf5c.firebaseapp.com',
+    storageBucket: 'attendance-management-sy-5bf5c.appspot.com',
+    measurementId: 'G-BJ72DJYK5N',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCmJq2L_cLHcBGUHIQLdBcEiI1kmYaWgog',
-    appId: '1:1052037114353:android:fea2225d9c4d036e6abc50',
-    messagingSenderId: '1052037114353',
-    projectId: 'fir-series-251f8',
-    storageBucket: 'fir-series-251f8.appspot.com',
+    apiKey: 'AIzaSyCEoohbCZ3zc--9Iz8Mbkl9O8Hq-znX0-I',
+    appId: '1:752850897548:android:674998b6877e312ee8c9a9',
+    messagingSenderId: '752850897548',
+    projectId: 'attendance-management-sy-5bf5c',
+    storageBucket: 'attendance-management-sy-5bf5c.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAr3uPumyGz5thgySap9VBxnVGA-aPpLAQ',
-    appId: '1:1052037114353:ios:aebd1309fe46d8106abc50',
-    messagingSenderId: '1052037114353',
-    projectId: 'fir-series-251f8',
-    storageBucket: 'fir-series-251f8.appspot.com',
+    apiKey: 'AIzaSyBQGhTgpIin7trodEqCKgWZIJlrMfgqnfQ',
+    appId: '1:752850897548:ios:013601d09bf03624e8c9a9',
+    messagingSenderId: '752850897548',
+    projectId: 'attendance-management-sy-5bf5c',
+    storageBucket: 'attendance-management-sy-5bf5c.appspot.com',
     iosBundleId: 'com.example.firebaseSeries',
   );
 }

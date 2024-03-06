@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1052037114353",
-    "project_id": "fir-series-251f8",
-    "storage_bucket": "fir-series-251f8.appspot.com"
+    "project_number": "752850897548",
+    "project_id": "attendance-management-sy-5bf5c",
+    "storage_bucket": "attendance-management-sy-5bf5c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1052037114353:android:fea2225d9c4d036e6abc50",
+        "mobilesdk_app_id": "1:752850897548:android:674998b6877e312ee8c9a9",
         "android_client_info": {
           "package_name": "com.example.firebase_series"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCmJq2L_cLHcBGUHIQLdBcEiI1kmYaWgog"
+          "current_key": "AIzaSyCEoohbCZ3zc--9Iz8Mbkl9O8Hq-znX0-I"
         }
       ],
       "services": {
