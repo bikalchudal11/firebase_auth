@@ -14,12 +14,26 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
+  //storing instance in a variable to minimize code and simply writing variable instead of instance
+  FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
   //for fetching data using firebase database
   // DocumentSnapshot snapshot = await FirebaseFirestore.instance
   //     .collection("users")
   //     .doc("uFnzU8mugY50jogITkNU")
   //     .get();
   // print(snapshot.data().toString());
+
+  //for adding data in firebase database
+  // Map<String, dynamic> newUserData = {
+  //   "name": "Slantcode",
+  //   "email": "slantcode@gmail.com"
+  // };
+  // await _firestore
+  //     .collection("users")
+  //     .doc("your-id-here")
+  //     .update({"email": "slantcode2@gmail.com"});
+  // print("New user updated");
 
   runApp(MyApp());
 }
