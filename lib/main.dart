@@ -35,6 +35,10 @@ void main() async {
   //     .update({"email": "slantcode2@gmail.com"});
   // print("New user updated");
 
+  //for deleting data in firebase database
+  await _firestore.collection("users").doc("your-id-here").delete();
+  print("user deleted");
+
   runApp(MyApp());
 }
 
@@ -46,9 +50,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       //if the user is logged in then we show home page
-      home: (FirebaseAuth.instance.currentUser != null)
-          ? HomeScreen()
-          : SignInWithPhone(),
+      // home: (FirebaseAuth.instance.currentUser != null)
+      //     ? HomeScreen()
+      //     : SignInWithPhone(),
+      home: HomeScreen(),
     );
   }
 }
